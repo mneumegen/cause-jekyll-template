@@ -1,0 +1,85 @@
+---
+layout: default
+title: The Sheep Vote
+header_background_image: /images/sheep.jpeg
+newsletter_background_image: /images/sheep2.jpeg
+donation_embed: '<script src="https://donorbox.org/widget.js" type="text/javascript"></script><iframe src="https://donorbox.org/embed/give-sheep-the-vote?hide_donation_meter=true" height="685px" width="100%" style="max-width:425px; min-width:310px" seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no"></iframe>'
+newsletter_action: "//your-mailchimp-action-url.com"
+---
+<header style="background-image: url('{{ site.baseurl }}{{ page.header_background_image }}');">
+	<div class="container">
+		<h1 class="editable">Give sheep the vote</h1>
+		<div class="button">
+			<a href="#donate">Donate Today</a>
+		</div>
+
+
+	</div>
+	<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
+</header>
+
+<section id="learn-more">
+	<div class="container">
+		<h2 class="editable">Why Sheep need the vote</h2>
+
+		<ul class="thirds editable">
+			<li>
+				<div class="image" style="background: #e1e1ff;"><img src="{{ site.baseurl }}/images/people.svg" style="fill: red;"/></div>
+				<h3>Population</h3>
+				<p>New Zealand has a human population of 4.5M while there are 70M sheep. </p>
+			</li>
+
+			<li>
+				<div class="image" style="background: #c3ffd5;"><img src="{{ site.baseurl }}/images/trend.svg" /></div>
+				<h3>Economy</h3>
+				<p>Sheep are the backbone of the economy yet they receive no compensation.</p>
+			</li>
+
+			<li>
+				<div class="image" style="background: #ffc0c0;"><img src="{{ site.baseurl }}/images/heart.svg" /></div>
+				<h3>Work Conditions</h3>
+				<p>Sheep are forced to eat grass every day of their life. How about some of variety?</p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section>
+	<div class="container editable">
+		<h2>Our Mission</h2>
+		<p>Leave no sheep behind. Our mission to give sheep the right to vote and have them represented in parliament. For too long sheep have been exploited for their warm wool and delicious meat. It's time to put our hooves down and baa for what's right. Give sheep the vote!</p>
+
+		<p>
+			<img src="{{ site.baseurl }}/images/sheep3.jpeg" alt="Sheep">
+		</p>
+
+		<blockquote>
+			<p class="quote">The ultimate measure of a sheep is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.</quote>
+			<div class="attribute">
+				<p class="meta">
+					<span class="author"><strong>Wooly McBaa</strong><br />Founder</span>
+					<span class="image"><img src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span>
+				</p>
+		</blockquote>
+	</div>
+</section>
+
+<section class="newsletter" style="background-image: url('{{ site.baseurl }}{{ page.newsletter_background_image }}');">
+	<div class="container">
+		<h2 class="editable">Join us</h2>
+		<p class="editable">Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
+		<form action="{{ page.newsletter_action }}" method="post">
+			<input type="text" name="EMAIL" placeholder="Email">
+			<input type="submit" value="Sign up"/>
+		</form>
+	</div>
+</section>
+
+<section id="donate">
+	<div class="container">
+		<h2 class="editable">Make a donation</h2>
+		<div class="donate">
+			{{ page.donation_embed }}
+		</div>
+	</div>
+</section>
