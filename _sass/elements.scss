@@ -1,8 +1,16 @@
 html, body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #333;
+}
+
+html {
+	background: #000;
+}
+
+body {
+	background: #fff;
 }
 
 img {
@@ -42,6 +50,11 @@ nav {
 	img{
 		width: 40px;
 	}
+
+	.button a {
+		padding: 10px;
+		font-size: .8em;
+	}
 }
 
 header {
@@ -53,6 +66,11 @@ header {
 	align-items: center;
 	color: #fff;
 	text-shadow: 1px 1px 1px #000;
+
+	.button a {
+		text-shadow: none;
+		font-size: 1.4em;
+	}
 }
 
 section {
@@ -62,24 +80,39 @@ section {
 form {
 	display: flex;
 	flex-wrap: wrap;
-	input[type="text"], input[type="submit"] {
-
-		border: 0;
-		padding: 15px;
-		box-sizing: content-box;
-		font-size: 1.1em;
-	}
+	max-width: 500px;
+	margin: 0 auto;
 
 	input[type="text"] {
 		flex-grow: 1;
-		max-width: 400px;
 	}
 
 	input[type="submit"] {
-		background: #5cb85c;
-		color: #fff;
 		border-top-right-radius: 5px;
 		border-bottom-right-radius: 5px;
-		cursor: pointer;
+	}
+}
+
+.button a, input[type="submit"], input[type="text"] {
+	border: 0;
+	padding: 15px;
+	box-sizing: content-box;
+	font-size: 1em;
+	font-weight: 100;
+}
+
+.button a, input[type="submit"] {
+	background: #5cb85c;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 0 2px 0 0 #408040;
+}
+
+.button a {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 3px;
+
+	&:hover {
 	}
 }

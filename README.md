@@ -47,6 +47,16 @@ $ bundle exec jekyll serve
 
 Cause is already optimised for updating pages, company details and footer elements in CloudCannon.
 
+## SEO Tag
+
+This site uses the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) plugin. You should at least set a title in front matter on each page. Have a look at the [project page](https://github.com/jekyll/jekyll-seo-tag) for more options.
+
+## Google Analytics
+
+[Google Analytics](https://www.google.com/analytics/) is a third party website analytics tool. To install:
+1. Add your Google Analytics key to `_config.yml`
+2. Run your site in production `JEKYLL_ENV=production`
+
 ## Donorbox
 
 [Donorbox](https://donorbox.org/) is a third party embeddable donation form for websites. To install:
