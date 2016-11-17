@@ -1,3 +1,8 @@
 url: http://example.com
-baseurl: 
+baseurl:
 google_analytics_key:
+
+collections:
+  - "staff_members"
+
+permalink: pretty
