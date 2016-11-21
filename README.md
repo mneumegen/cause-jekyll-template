@@ -55,14 +55,14 @@ This site uses the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) pl
 
 [Google Analytics](https://www.google.com/analytics/) is a third party website analytics tool. To install:
 1. Add your Google Analytics key to `_config.yml`
-2. Run your site in production `JEKYLL_ENV=production`
+2. Run your site in production `JEKYLL_ENV=production`. This is the default in CloudCannon and GitHub Pages.
 
 ## Donorbox
 
 [Donorbox](https://donorbox.org/) is a third party embeddable donation form for websites. To install:
 
 1. Set up a campaign on Donorbox
-2. Copy the embed code for the Dashboard screen
+2. Copy the embed code from the Dashboard screen
 3. Paste it into `donation_embed` in the `index.html` front matter
 
 ## Mailchimp
