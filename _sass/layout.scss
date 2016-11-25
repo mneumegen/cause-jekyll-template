@@ -7,13 +7,6 @@
 	box-sizing: border-box;
 }
 
-.company_name {
-	font-size: 1.6em;
-	position: relative;
-	top: -7px;
-	left: 15px;
-}
-
 .donate {
 	text-align: center;
 }
@@ -191,6 +184,9 @@ footer {
 	}
 	.arrow {
 		font-size: .8em;
+		font-size: .4em;
+		position: relative;
+		top: -2px;
 	}
 }
 
